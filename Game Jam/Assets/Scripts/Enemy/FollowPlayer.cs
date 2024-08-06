@@ -16,4 +16,12 @@ public class FollowPlayer : MonoBehaviour
     {
         agent.SetDestination(Player.instance.transform.position);
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("CostasPlayer"))
+        {
+            PlayerLife.instance.TakeDamage(1);
+        }
+    }
 }
