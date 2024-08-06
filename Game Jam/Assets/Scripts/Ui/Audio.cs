@@ -13,7 +13,7 @@ public class Audio : MonoBehaviour
 
     public void Start()
     {
-        if (PlayerPrefs.HasKey("volumeMusica"))
+        if (PlayerPrefs.HasKey("Música"))
         {
             LoadVolume();
         }
@@ -28,20 +28,20 @@ public class Audio : MonoBehaviour
     public void SetVolumeMusica()
     {
         float volume = musicaSlider.value;
-        mixer.SetFloat("musica", Mathf.Log10(volume) * 20);
-        PlayerPrefs.SetFloat("volumeMusica", volume);
+        mixer.SetFloat("Música", Mathf.Log10(volume) * 20);
+        PlayerPrefs.SetFloat("Música", volume);
     }
     public void SetVolumeEfeitos()
     {
           float volume = efeitosSlider.value;
-          mixer.SetFloat("efeitos", Mathf.Log10(volume) * 20);
-          PlayerPrefs.SetFloat("volumeEfeitos", volume);
+          mixer.SetFloat("SFX", Mathf.Log10(volume) * 20);
+          PlayerPrefs.SetFloat("SFX", volume);
     }
 
     public void LoadVolume()
     {
-        musicaSlider.value = PlayerPrefs.GetFloat("volumeMusica");
-        efeitosSlider.value = PlayerPrefs.GetFloat("volumeEfeitos");      
+        musicaSlider.value = PlayerPrefs.GetFloat("Música");
+        efeitosSlider.value = PlayerPrefs.GetFloat("SFX");      
 
         SetVolumeMusica();
         SetVolumeEfeitos();     
