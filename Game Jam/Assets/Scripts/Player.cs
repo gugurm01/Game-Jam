@@ -28,12 +28,18 @@ public class Player : MonoBehaviour
     {
         inputHorizontal = Input.GetAxisRaw(inputNameHorizontal);
         inputVertical = Input.GetAxisRaw(inputNameVertical);
+        Move();
     }
 
-    private void FixedUpdate()
+    private void Move()
     {
         moveDir = new Vector3(inputHorizontal, rb.velocity.y, inputVertical).normalized;
 
-        rb.velocity = moveDir * speed;
+        rb.MovePosition(transform.position + moveDir * speed * Time.fixedDeltaTime);
+        if (moveDir != Vector3.zero)
+        {
+            Quaternion toRotation = Quaternion.LookRotation(moveDir, Vector3.up);
+            rb.rotation = Quaternion.RotateTowards(rb.rotation, toRotation, 360 * Time.fixedDeltaTime);
+        }
     }
 }
