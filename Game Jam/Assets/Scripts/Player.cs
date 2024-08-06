@@ -7,6 +7,7 @@ public class Player : MonoBehaviour
     [SerializeField] private float speed;
     [SerializeField] private string inputNameHorizontal;
     [SerializeField] private string inputNameVertical;
+    Vector3 moveDir;
 
     [SerializeField] private Color color;
 
@@ -31,6 +32,8 @@ public class Player : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb.velocity = new Vector3(inputHorizontal * speed * Time.fixedDeltaTime, rb.velocity.y, inputVertical * speed * Time.fixedDeltaTime);
+        moveDir = new Vector3(inputHorizontal, rb.velocity.y, inputVertical).normalized;
+
+        rb.velocity = moveDir * speed;
     }
 }
