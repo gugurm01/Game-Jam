@@ -9,6 +9,8 @@ public class Player : MonoBehaviour
     [SerializeField] private string inputNameVertical;
     Vector3 moveDir;
 
+    public static Player instance;
+
     [SerializeField] private Color color;
 
     private Rigidbody rb;
@@ -16,6 +18,14 @@ public class Player : MonoBehaviour
 
     private float inputHorizontal;
     private float inputVertical;
+
+    private void Awake()
+    {
+        if(instance == null)
+        {
+            instance = this;
+        }
+    }
 
     private void Start()
     {
