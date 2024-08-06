@@ -39,7 +39,7 @@ public class Player : MonoBehaviour
         if (moveDir != Vector3.zero)
         {
             Quaternion toRotation = Quaternion.LookRotation(moveDir, Vector3.up);
-            rb.rotation = Quaternion.RotateTowards(rb.rotation, toRotation, 360 * Time.fixedDeltaTime);
+            rb.rotation = Quaternion.RotateTowards(rb.rotation, toRotation, 360 * 0.1f);
         }
     }
 }
