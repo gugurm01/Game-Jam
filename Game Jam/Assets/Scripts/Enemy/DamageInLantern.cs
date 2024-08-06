@@ -12,9 +12,12 @@ public class DamageInLantern : MonoBehaviour
 
     private EnemyHealth health;
 
+    [SerializeField] MeshRenderer meshRenderer;
+
     void Start()
     {
         health = GetComponent<EnemyHealth>();
+        meshRenderer.enabled = false;
 
         if (health == null)
         {
@@ -35,6 +38,7 @@ public class DamageInLantern : MonoBehaviour
         if (other.CompareTag("Lanterna"))
         {
             isInsideTrigger = true;
+            meshRenderer.enabled = true;
         }
     }
 
@@ -44,6 +48,7 @@ public class DamageInLantern : MonoBehaviour
         {
             isInsideTrigger = false;
             StopTakingDamage();
+            meshRenderer.enabled = false;
         }
     }
 
