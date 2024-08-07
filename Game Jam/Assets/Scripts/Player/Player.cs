@@ -15,6 +15,7 @@ public class Player : MonoBehaviour
     [SerializeField] private Color color;
 
     private Rigidbody rb;
+    //private Renderer renderer;
 
     private float inputHorizontal;
     private float inputVertical;
@@ -31,14 +32,24 @@ public class Player : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
-
-        GetComponent<Renderer>().material.color = color;
+        //renderer = GetComponentInChildren<Renderer>();
+        //GetComponent<Renderer>().material.color = color;
     }
 
     private void Update()
     {
         inputHorizontal = Input.GetAxisRaw(inputNameHorizontal);
         inputVertical = Input.GetAxisRaw(inputNameVertical);
+
+        // Checa se há entrada horizontal ou vertical
+        if (inputHorizontal != 0 || inputVertical != 0)
+        {
+            animator.SetBool("Run", true);
+        }
+        else
+        {
+            animator.SetBool("Run", false);
+        }
 
         Move();
     }
