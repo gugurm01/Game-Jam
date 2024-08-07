@@ -843,9 +843,9 @@ GameObject:
   m_Component:
   - component: {fileID: 5441927594097555776}
   - component: {fileID: 5365064390887361890}
-  - component: {fileID: 5441927594097555777}
   - component: {fileID: 5441927594097555778}
   - component: {fileID: 5441927594097555782}
+  - component: {fileID: 5441927594097555784}
   m_Layer: 0
   m_Name: mini simple demo_02
   m_TagString: Untagged
@@ -1754,7 +1754,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: 078c9b81f9113574eaaf7eee29f2ff3e, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
-  m_ApplyRootMotion: 1
+  m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_WarningMessage: 
@@ -1820,18 +1820,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5441927594097555777
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 961192489410305013}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17e6f4d234d3f0947a81b355a583816c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!82 &5441927594097555778
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1940,10 +1928,26 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &5441927594097555784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 961192489410305013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a0446c7460cfee4283212474ef1dd51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  inputNameHorizontal: Horizontal 1
+  inputNameVertical: Vertical 1
+  color: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &5462721587939395379
 GameObject:
   m_ObjectHideFlags: 0

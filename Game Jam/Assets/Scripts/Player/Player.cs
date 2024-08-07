@@ -40,15 +40,33 @@ public class Player : MonoBehaviour
     {
         inputHorizontal = Input.GetAxisRaw(inputNameHorizontal);
         inputVertical = Input.GetAxisRaw(inputNameVertical);
+        if(Input.GetButtonDown("Vertical 1"))
+        {
+            animator.SetBool("Run", true);
+        }
+        else if (Input.GetButtonDown("Vertical 2"))
+        {
+            animator.SetBool("Run", true);
+        }
+        else if (Input.GetButtonDown("Horizontal 1"))
+        {
+            animator.SetBool("Run", true);
+        }
+        else if (Input.GetButtonDown("Horizontal 2"))
+        {
+            animator.SetBool("Run", true);
+        }
+
         Move();
         
     }
 
     private void Move()
     {
-        moveDir = new Vector3(inputHorizontal, rb.velocity.y, inputVertical).normalized;
-        animator.GetBool("Run");
-        rb.MovePosition(transform.position + moveDir * speed * Time.fixedDeltaTime);
+        moveDir = new Vector3(inputHorizontal, 0, inputVertical).normalized;
+        
+        rb.velocity = moveDir;
+        //rb.MovePosition(transform.position + moveDir * speed * Time.fixedDeltaTime);
         if (moveDir != Vector3.zero)
         {
             Quaternion toRotation = Quaternion.LookRotation(moveDir, Vector3.up);
