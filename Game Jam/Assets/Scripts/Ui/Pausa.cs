@@ -8,7 +8,6 @@ public class Pausa : MonoBehaviour
     [SerializeField] private GameObject menuControles;
     [SerializeField] private GameObject menuAudio;
 
-    //[SerializeField] private GameObject carta;
     void Update()
     {
 
@@ -41,18 +40,6 @@ public class Pausa : MonoBehaviour
 
     }
 
-
-   /* public void AtivarMenuCodigo()
-    {
-
-        if (!menuControles.activeSelf && !menuAudio.activeSelf)
-        {
-
-            Debug.Log("Menu de código ativado.");
-
-
-        }
-    }*/
     public void SairJogo()
     {
         Application.Quit();
