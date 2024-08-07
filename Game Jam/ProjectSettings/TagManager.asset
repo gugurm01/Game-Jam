@@ -9,6 +9,7 @@ TagManager:
   - Lanterna
   - Ground
   - CostasPlayer
+  - PowerUp
   layers:
   - Default
   - TransparentFX
