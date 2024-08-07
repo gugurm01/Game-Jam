@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
 
     GameObject[] enemies;
+    [SerializeField] GameObject player1, player2;
 
     public GameObject hudPanel, gameOverPanel; 
 
@@ -17,6 +18,11 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
         enemies = GameObject.FindGameObjectsWithTag("Enemy");
+
+        if(player1.GetComponent<PlayerLife>().isImmobilized && player2.GetComponent<PlayerLife>().isImmobilized)
+        {
+            GameOver();
+        }
 
         if(enemies.Length <= 0)
         {
