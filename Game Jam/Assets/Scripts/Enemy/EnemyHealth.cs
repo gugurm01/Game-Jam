@@ -8,6 +8,8 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField] int health;
     [SerializeField] int maxHealth;
 
+    [SerializeField] GameObject father;
+
     [SerializeField] TextMeshProUGUI healthText;
 
     private void Start()
@@ -32,6 +34,6 @@ public class EnemyHealth : MonoBehaviour
 
     public void Die()
     {
-        Debug.Log("inimigo morreu");
+        Destroy(father);
     }
 }
