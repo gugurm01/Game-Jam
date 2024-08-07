@@ -22,7 +22,7 @@ public class Player : MonoBehaviour
 
     private void Awake()
     {
-        if(instance == null)
+        if (instance == null)
         {
             instance = this;
         }
@@ -40,32 +40,25 @@ public class Player : MonoBehaviour
     {
         inputHorizontal = Input.GetAxisRaw(inputNameHorizontal);
         inputVertical = Input.GetAxisRaw(inputNameVertical);
-        if(Input.GetButtonDown("Vertical 1"))
+
+        // Checa se há entrada horizontal ou vertical
+        if (inputHorizontal != 0 || inputVertical != 0)
         {
             animator.SetBool("Run", true);
         }
-        else if (Input.GetButtonDown("Vertical 2"))
+        else
         {
-            animator.SetBool("Run", true);
-        }
-        else if (Input.GetButtonDown("Horizontal 1"))
-        {
-            animator.SetBool("Run", true);
-        }
-        else if (Input.GetButtonDown("Horizontal 2"))
-        {
-            animator.SetBool("Run", true);
+            animator.SetBool("Run", false);
         }
 
         Move();
-        
     }
 
     private void Move()
     {
         moveDir = new Vector3(inputHorizontal, 0, inputVertical).normalized;
-        
-        rb.velocity = moveDir;
+
+        rb.velocity = moveDir * speed; // Corrigido para multiplicar pela velocidade
         //rb.MovePosition(transform.position + moveDir * speed * Time.fixedDeltaTime);
         if (moveDir != Vector3.zero)
         {
