@@ -11,7 +11,9 @@ public class Reviving : MonoBehaviour
 
     private float reviveTimer = 0f;
     private bool isReviving = false;
-    private PlayerLife playerToRevive;
+    [SerializeField] private PlayerLife playerToRevive;
+
+    [SerializeField] string key;
 
     void Update()
     {
@@ -25,7 +27,7 @@ public class Reviving : MonoBehaviour
                 CompleteRevive();
             }
         }
-        else if (Input.GetKeyDown(KeyCode.R)) // Pressione "R" para tentar reviver
+        else if (Input.GetButtonDown(key)) // Pressione "R" para tentar reviver
         {
             TryRevive();
         }
@@ -37,7 +39,7 @@ public class Reviving : MonoBehaviour
         foreach (var hitCollider in hitColliders)
         {
             PlayerLife player = hitCollider.GetComponent<PlayerLife>();
-            if (player != null && player.isImmobilized)
+            if (player != null && player != this && player.isImmobilized)
             {
                 playerToRevive = player;
                 isReviving = true;

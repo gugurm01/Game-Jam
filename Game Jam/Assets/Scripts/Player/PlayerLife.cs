@@ -15,9 +15,8 @@ public class PlayerLife : MonoBehaviour
     public float immobilizeTime = 30f; // Tempo máximo para ser revivido
     public Slider immobilizeProgressBar;
 
-    public GameObject player;
-
     private float immobilizeTimer;
+    [SerializeField]Player player;
 
     private void Awake()
     {
@@ -61,7 +60,7 @@ public class PlayerLife : MonoBehaviour
         isImmobilized = true;
         immobilizeTimer = immobilizeTime;
         immobilizeProgressBar.gameObject.SetActive(true);
-        player.GetComponent<Player>().enabled = false;
+        player.enabled = false;
     }
 
     public void Revive()
@@ -72,7 +71,7 @@ public class PlayerLife : MonoBehaviour
         immobilizeProgressBar.gameObject.SetActive(false);
         currentHealth = maxHealth;
         transform.position = revivePoint.position;
-        player.GetComponent<Player>().enabled = true;
+        player.enabled = true;
     }
 
     void Die()

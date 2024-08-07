@@ -9,6 +9,8 @@ public class FollowPlayer : MonoBehaviour
     [SerializeField] Transform costasDoPlayer;
     MeshRenderer meshRenderer;
 
+    [SerializeField] GameObject play;
+
     private void Start()
     {
         agent = GetComponent<NavMeshAgent>();
@@ -24,7 +26,7 @@ public class FollowPlayer : MonoBehaviour
     {
         if (other.CompareTag("CostasPlayer"))
         {
-            PlayerLife.instance.TakeDamage(1);
+            play.GetComponent<PlayerLife>().TakeDamage(1);
             StartCoroutine(Aparecer());
         }
     }
