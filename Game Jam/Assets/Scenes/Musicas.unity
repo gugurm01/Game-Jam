@@ -231,7 +231,7 @@ GameObject:
   m_Component:
   - component: {fileID: 277931303}
   m_Layer: 0
-  m_Name: "     \u2593 \u2593 \u2593 Sons Do Robo Tomando Dano\u2593 \u2593 \u2593 "
+  m_Name: '                    Sons Do Robo Tomando Dano'
   m_TagString: Untagged
   m_Icon: {fileID: 2800000, guid: ec7c645d93308c04d8840982af12101e, type: 3}
   m_NavMeshLayer: 0
@@ -283,7 +283,9 @@ PlayableDirector:
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
-  m_SceneBindings: []
+  m_SceneBindings:
+  - key: {fileID: -4143333560507997903, guid: 847b8c8aac8b13140ae66c0c8f7f9159, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &385688141
@@ -406,7 +408,7 @@ GameObject:
   - component: {fileID: 495247222}
   - component: {fileID: 495247221}
   m_Layer: 0
-  m_Name: Robodano1
+  m_Name: '       Robodano1'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -529,7 +531,7 @@ GameObject:
   - component: {fileID: 626811753}
   - component: {fileID: 626811752}
   m_Layer: 0
-  m_Name: Robodano3
+  m_Name: '            Robodano3'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -588,7 +590,7 @@ GameObject:
   - component: {fileID: 1135965927}
   - component: {fileID: 1135965926}
   m_Layer: 0
-  m_Name: Musicas
+  m_Name: '                                 Musicas'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -729,7 +731,7 @@ GameObject:
   - component: {fileID: 1595214430}
   - component: {fileID: 1595214429}
   m_Layer: 0
-  m_Name: Robodano2
+  m_Name: '         Robodano2'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -786,7 +788,7 @@ GameObject:
   - component: {fileID: 1704165122}
   - component: {fileID: 1704165121}
   m_Layer: 0
-  m_Name: "SonsRob\xF4"
+  m_Name: "            SonsRob\xF4"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
