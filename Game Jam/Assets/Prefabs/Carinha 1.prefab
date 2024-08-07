@@ -1987,6 +1987,9 @@ GameObject:
   - component: {fileID: 3475863034251707455}
   - component: {fileID: 3588712428673232923}
   - component: {fileID: 3588712428673232917}
+  - component: {fileID: 1847687258135265801}
+  - component: {fileID: 1714962258372783484}
+  - component: {fileID: 9035040409612435494}
   m_Layer: 0
   m_Name: Carinha 1
   m_TagString: Untagged
@@ -2056,7 +2059,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!114 &3588712428673232917
 MonoBehaviour:
@@ -2070,10 +2073,59 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a0446c7460cfee4283212474ef1dd51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 3475863034251707455}
   speed: 2
   inputNameHorizontal: Horizontal 1
   inputNameVertical: Vertical 1
   color: {r: 0, g: 0, b: 0, a: 0}
+--- !u!114 &1847687258135265801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8583546262603649704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4be39e1474e2a14580997d8f77e2f9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 1
+  currentHealth: 0
+  isImmobilized: 0
+  revivePoint: {fileID: 0}
+  immobilizeTime: 30
+  immobilizeProgressBar: {fileID: 0}
+  player: {fileID: 8583546262603649704}
+--- !u!114 &1714962258372783484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8583546262603649704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bed3300f7e2eccb469f7c0e3c797d70d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reviveRange: 5
+  reviveTime: 5
+  reviveProgressBar: {fileID: 0}
+--- !u!136 &9035040409612435494
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8583546262603649704}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 1.6062102
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.67800784, z: 0}
 --- !u!1 &8627007111636655433
 GameObject:
   m_ObjectHideFlags: 0
