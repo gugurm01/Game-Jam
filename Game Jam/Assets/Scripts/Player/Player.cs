@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    Animator animator;
     [SerializeField] private float speed;
     [SerializeField] private string inputNameHorizontal;
     [SerializeField] private string inputNameVertical;
@@ -14,7 +15,7 @@ public class Player : MonoBehaviour
     [SerializeField] private Color color;
 
     private Rigidbody rb;
-    private Renderer renderer;
+    //private Renderer renderer;
 
     private float inputHorizontal;
     private float inputVertical;
@@ -29,9 +30,10 @@ public class Player : MonoBehaviour
 
     private void Start()
     {
+        animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
-        renderer = GetComponentInChildren<Renderer>();
-        renderer.material.color = color;
+        //renderer = GetComponentInChildren<Renderer>();
+        //GetComponent<Renderer>().material.color = color;
     }
 
     private void Update()
@@ -39,12 +41,13 @@ public class Player : MonoBehaviour
         inputHorizontal = Input.GetAxisRaw(inputNameHorizontal);
         inputVertical = Input.GetAxisRaw(inputNameVertical);
         Move();
+        
     }
 
     private void Move()
     {
         moveDir = new Vector3(inputHorizontal, rb.velocity.y, inputVertical).normalized;
-
+        animator.GetBool("Run");
         rb.MovePosition(transform.position + moveDir * speed * Time.fixedDeltaTime);
         if (moveDir != Vector3.zero)
         {
