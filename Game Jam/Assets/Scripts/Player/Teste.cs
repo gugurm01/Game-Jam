@@ -4,26 +4,43 @@ using UnityEngine;
 
 public class Teste : MonoBehaviour
 {
-    Animator animator;
+    private float velocidade;
+    private Vector2 direcao;
 
-    private void Start()
+    // Start is called before the first frame update
+    void Start()
     {
-        animator = GetComponent<Animator>();
+        velocidade = 3;
+        direcao = Vector3.zero;
+
     }
+
+    // Update is called once per frame
     void Update()
     {
-        float horizontal = Input.GetAxisRaw("Horizontal");
-        float vertical = Input.GetAxisRaw("Vertical");
+        InputPersonagem();
+        transform.Translate(direcao * velocidade * Time.deltaTime);
+    }
 
-        Vector3 direction = new Vector3(horizontal, 0f, vertical).normalized;
+    void InputPersonagem()
+    {
+        direcao = Vector2.zero;
 
-        if (Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKey(KeyCode.UpArrow))
         {
-            animator.SetBool("Walk",true);
+            direcao += Vector2.up;
         }
-        else
+        if (Input.GetKey(KeyCode.DownArrow))
         {
-            animator.SetBool("Walk", false);
+            direcao += Vector2.down;
+        }
+        if (Input.GetKey(KeyCode.LeftArrow))
+        {
+            direcao += Vector2.left;
+        }
+        if (Input.GetKey(KeyCode.RightArrow))
+        {
+            direcao += Vector2.right;
         }
     }
 }
