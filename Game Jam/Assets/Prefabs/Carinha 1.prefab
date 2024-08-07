@@ -2073,11 +2073,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a0446c7460cfee4283212474ef1dd51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 3475863034251707455}
-  speed: 2
-  inputNameHorizontal: Horizontal 1
-  inputNameVertical: Vertical 1
-  color: {r: 0, g: 0, b: 0, a: 0}
+  speed: 5
+  inputNameHorizontal: Horizontal 2
+  inputNameVertical: Vertical 2
+  color: {r: 0.022718906, g: 0, b: 1, a: 0}
 --- !u!114 &1847687258135265801
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2112,6 +2111,8 @@ MonoBehaviour:
   reviveRange: 5
   reviveTime: 5
   reviveProgressBar: {fileID: 0}
+  playerToRevive: {fileID: 0}
+  key: Fire1
 --- !u!136 &9035040409612435494
 CapsuleCollider:
   m_ObjectHideFlags: 0
