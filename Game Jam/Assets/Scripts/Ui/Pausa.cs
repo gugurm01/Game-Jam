@@ -39,6 +39,10 @@ public class Pausa : MonoBehaviour
         SceneManager.LoadScene("Game");
     }
 
+    public void VoltarProMenu()
+    {
+        SceneManager.LoadScene("Menu");
+    }
 
     public void AtivarMenuAudio()
     {

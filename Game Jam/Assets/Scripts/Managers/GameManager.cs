@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
     GameObject[] enemies;
     [SerializeField] GameObject player1, player2;
 
-    public GameObject hudPanel, gameOverPanel; 
+    public GameObject hudPanel, gameOverPanel, winPanel; 
 
     private void Awake()
     {
@@ -41,7 +41,7 @@ public class GameManager : MonoBehaviour
     public void Win()
     {
         hudPanel.SetActive(false);
-        gameOverPanel.SetActive(true);
+        winPanel.SetActive(true);
         Time.timeScale = 0f;
     }
 }
