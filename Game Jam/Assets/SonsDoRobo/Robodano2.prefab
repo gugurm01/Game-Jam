@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6927897666049544023
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6927897666049544021}
+  - component: {fileID: 6927897666049544022}
+  m_Layer: 0
+  m_Name: Robodano2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &6927897666049544021
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6927897666049544023}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -857.8623, y: -402.49017, z: -905.0283}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!320 &6927897666049544022
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6927897666049544023}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: 65d7b1f0ef0bfd04fb5e76c836c3c0fc, type: 2}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: -3221626890367276286, guid: 65d7b1f0ef0bfd04fb5e76c836c3c0fc, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -3551579699596564733, guid: 65d7b1f0ef0bfd04fb5e76c836c3c0fc, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -3756473125524686762, guid: 65d7b1f0ef0bfd04fb5e76c836c3c0fc, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -7534336872820896667, guid: 65d7b1f0ef0bfd04fb5e76c836c3c0fc, type: 2}
+    value: {fileID: 0}
+  m_ExposedReferences:
+    m_References: []

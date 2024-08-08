@@ -397,61 +397,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 37.896, y: -45.136, z: -21.557}
---- !u!1 &495247220
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 495247222}
-  - component: {fileID: 495247221}
-  m_Layer: 0
-  m_Name: '       Robodano1'
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!320 &495247221
-PlayableDirector:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 495247220}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: d5f75e04c38f0924ea276601d449be6c, type: 2}
-  m_InitialState: 1
-  m_WrapMode: 2
-  m_DirectorUpdateMode: 1
-  m_InitialTime: 0
-  m_SceneBindings:
-  - key: {fileID: -7646548620130800100, guid: d5f75e04c38f0924ea276601d449be6c, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: 7905398073119978906, guid: d5f75e04c38f0924ea276601d449be6c, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: 5318530894697957784, guid: d5f75e04c38f0924ea276601d449be6c, type: 2}
-    value: {fileID: 0}
-  m_ExposedReferences:
-    m_References: []
---- !u!4 &495247222
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 495247220}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -857.8623, y: -402.49017, z: -905.0283}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &551069476
 GameObject:
   m_ObjectHideFlags: 0
@@ -520,65 +465,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &626811751
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 626811753}
-  - component: {fileID: 626811752}
-  m_Layer: 0
-  m_Name: '            Robodano3'
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!320 &626811752
-PlayableDirector:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 626811751}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: 9ddc4dfc9a89f4a47811d3467989804b, type: 2}
-  m_InitialState: 1
-  m_WrapMode: 2
-  m_DirectorUpdateMode: 1
-  m_InitialTime: 0
-  m_SceneBindings:
-  - key: {fileID: 82072549724775181, guid: 9ddc4dfc9a89f4a47811d3467989804b, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: -1171453445358997264, guid: 9ddc4dfc9a89f4a47811d3467989804b, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: -5499445698701610466, guid: 9ddc4dfc9a89f4a47811d3467989804b, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: 1574755150885212602, guid: 9ddc4dfc9a89f4a47811d3467989804b, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: 6728965209373523663, guid: 9ddc4dfc9a89f4a47811d3467989804b, type: 2}
-    value: {fileID: 0}
-  m_ExposedReferences:
-    m_References: []
---- !u!4 &626811753
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 626811751}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -857.8623, y: -402.49017, z: -905.0283}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1135965925
 GameObject:
   m_ObjectHideFlags: 0
@@ -590,7 +476,7 @@ GameObject:
   - component: {fileID: 1135965927}
   - component: {fileID: 1135965926}
   m_Layer: 0
-  m_Name: '                                 Musicas'
+  m_Name: ' Musicas'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -720,63 +606,80 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1595214428
-GameObject:
+--- !u!1001 &1401907316
+PrefabInstance:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1595214430}
-  - component: {fileID: 1595214429}
-  m_Layer: 0
-  m_Name: '         Robodano2'
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!320 &1595214429
-PlayableDirector:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1595214428}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: 65d7b1f0ef0bfd04fb5e76c836c3c0fc, type: 2}
-  m_InitialState: 1
-  m_WrapMode: 2
-  m_DirectorUpdateMode: 1
-  m_InitialTime: 0
-  m_SceneBindings:
-  - key: {fileID: -3221626890367276286, guid: 65d7b1f0ef0bfd04fb5e76c836c3c0fc, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: -3551579699596564733, guid: 65d7b1f0ef0bfd04fb5e76c836c3c0fc, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: -3756473125524686762, guid: 65d7b1f0ef0bfd04fb5e76c836c3c0fc, type: 2}
-    value: {fileID: 0}
-  - key: {fileID: -7534336872820896667, guid: 65d7b1f0ef0bfd04fb5e76c836c3c0fc, type: 2}
-    value: {fileID: 0}
-  m_ExposedReferences:
-    m_References: []
---- !u!4 &1595214430
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1595214428}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -857.8623, y: -402.49017, z: -905.0283}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 29291012654718237, guid: ed1c45e231e20224ca71252df214024b,
+        type: 3}
+      propertyPath: m_Name
+      value: Robodano1
+      objectReference: {fileID: 0}
+    - target: {fileID: 29291012654718237, guid: ed1c45e231e20224ca71252df214024b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 29291012654718239, guid: ed1c45e231e20224ca71252df214024b,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 29291012654718239, guid: ed1c45e231e20224ca71252df214024b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -857.8623
+      objectReference: {fileID: 0}
+    - target: {fileID: 29291012654718239, guid: ed1c45e231e20224ca71252df214024b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -402.49017
+      objectReference: {fileID: 0}
+    - target: {fileID: 29291012654718239, guid: ed1c45e231e20224ca71252df214024b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -905.0283
+      objectReference: {fileID: 0}
+    - target: {fileID: 29291012654718239, guid: ed1c45e231e20224ca71252df214024b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 29291012654718239, guid: ed1c45e231e20224ca71252df214024b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 29291012654718239, guid: ed1c45e231e20224ca71252df214024b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 29291012654718239, guid: ed1c45e231e20224ca71252df214024b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 29291012654718239, guid: ed1c45e231e20224ca71252df214024b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 29291012654718239, guid: ed1c45e231e20224ca71252df214024b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 29291012654718239, guid: ed1c45e231e20224ca71252df214024b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ed1c45e231e20224ca71252df214024b, type: 3}
 --- !u!1 &1704165120
 GameObject:
   m_ObjectHideFlags: 0
@@ -930,6 +833,213 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1001 &29291012478304873
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 29291012654718237, guid: ed1c45e231e20224ca71252df214024b,
+        type: 3}
+      propertyPath: m_Name
+      value: '       Robodano1'
+      objectReference: {fileID: 0}
+    - target: {fileID: 29291012654718239, guid: ed1c45e231e20224ca71252df214024b,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 29291012654718239, guid: ed1c45e231e20224ca71252df214024b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -857.8623
+      objectReference: {fileID: 0}
+    - target: {fileID: 29291012654718239, guid: ed1c45e231e20224ca71252df214024b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -402.49017
+      objectReference: {fileID: 0}
+    - target: {fileID: 29291012654718239, guid: ed1c45e231e20224ca71252df214024b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -905.0283
+      objectReference: {fileID: 0}
+    - target: {fileID: 29291012654718239, guid: ed1c45e231e20224ca71252df214024b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 29291012654718239, guid: ed1c45e231e20224ca71252df214024b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 29291012654718239, guid: ed1c45e231e20224ca71252df214024b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 29291012654718239, guid: ed1c45e231e20224ca71252df214024b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 29291012654718239, guid: ed1c45e231e20224ca71252df214024b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 29291012654718239, guid: ed1c45e231e20224ca71252df214024b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 29291012654718239, guid: ed1c45e231e20224ca71252df214024b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ed1c45e231e20224ca71252df214024b, type: 3}
+--- !u!1001 &6564174086894144380
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6564174086278883349, guid: d0a96054fde971e4aa30eb11339e4afd,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6564174086278883349, guid: d0a96054fde971e4aa30eb11339e4afd,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -857.8623
+      objectReference: {fileID: 0}
+    - target: {fileID: 6564174086278883349, guid: d0a96054fde971e4aa30eb11339e4afd,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -402.49017
+      objectReference: {fileID: 0}
+    - target: {fileID: 6564174086278883349, guid: d0a96054fde971e4aa30eb11339e4afd,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -905.0283
+      objectReference: {fileID: 0}
+    - target: {fileID: 6564174086278883349, guid: d0a96054fde971e4aa30eb11339e4afd,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6564174086278883349, guid: d0a96054fde971e4aa30eb11339e4afd,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6564174086278883349, guid: d0a96054fde971e4aa30eb11339e4afd,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6564174086278883349, guid: d0a96054fde971e4aa30eb11339e4afd,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6564174086278883349, guid: d0a96054fde971e4aa30eb11339e4afd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6564174086278883349, guid: d0a96054fde971e4aa30eb11339e4afd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6564174086278883349, guid: d0a96054fde971e4aa30eb11339e4afd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6564174086278883355, guid: d0a96054fde971e4aa30eb11339e4afd,
+        type: 3}
+      propertyPath: m_Name
+      value: '            Robodano3'
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d0a96054fde971e4aa30eb11339e4afd, type: 3}
+--- !u!1001 &6927897665463190795
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6927897666049544021, guid: d61dcba9b2a582140b3622d63d540f6d,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6927897666049544021, guid: d61dcba9b2a582140b3622d63d540f6d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -857.8623
+      objectReference: {fileID: 0}
+    - target: {fileID: 6927897666049544021, guid: d61dcba9b2a582140b3622d63d540f6d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -402.49017
+      objectReference: {fileID: 0}
+    - target: {fileID: 6927897666049544021, guid: d61dcba9b2a582140b3622d63d540f6d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -905.0283
+      objectReference: {fileID: 0}
+    - target: {fileID: 6927897666049544021, guid: d61dcba9b2a582140b3622d63d540f6d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6927897666049544021, guid: d61dcba9b2a582140b3622d63d540f6d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6927897666049544021, guid: d61dcba9b2a582140b3622d63d540f6d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6927897666049544021, guid: d61dcba9b2a582140b3622d63d540f6d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6927897666049544021, guid: d61dcba9b2a582140b3622d63d540f6d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6927897666049544021, guid: d61dcba9b2a582140b3622d63d540f6d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6927897666049544021, guid: d61dcba9b2a582140b3622d63d540f6d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6927897666049544023, guid: d61dcba9b2a582140b3622d63d540f6d,
+        type: 3}
+      propertyPath: m_Name
+      value: '         Robodano2'
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d61dcba9b2a582140b3622d63d540f6d, type: 3}
 --- !u!1001 &8587868521631560040
 PrefabInstance:
   m_ObjectHideFlags: 0
