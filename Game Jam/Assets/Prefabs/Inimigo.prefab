@@ -116,6 +116,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   costasDoPlayer: {fileID: 0}
+  meshRenderer: {fileID: 6809411383764084409}
   play: {fileID: 0}
 --- !u!1 &1066284430788054397
 GameObject:

@@ -603,7 +603,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -29, y: 175}
+  m_AnchoredPosition: {x: -29.000122, y: 175}
   m_SizeDelta: {x: -1400.2642, y: -834.5353}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &117537915
@@ -4082,10 +4082,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1296473505}
-  - {fileID: 2131559674}
-  - {fileID: 937463717}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5157,7 +5154,7 @@ PrefabInstance:
         type: 3}
       propertyPath: playerToRevive
       value: 
-      objectReference: {fileID: 1593901750}
+      objectReference: {fileID: 1568380796}
     - target: {fileID: 1714962258372783484, guid: 98e775879440306438b753ab10b06280,
         type: 3}
       propertyPath: reviveProgressBar
@@ -5172,7 +5169,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1576531273}
+      objectReference: {fileID: 828026758}
     - target: {fileID: 1847687258135265801, guid: 98e775879440306438b753ab10b06280,
         type: 3}
       propertyPath: revivePoint
@@ -5604,6 +5601,30 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &828026757 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1847687258135265801, guid: 98e775879440306438b753ab10b06280,
+    type: 3}
+  m_PrefabInstance: {fileID: 828026749}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 828026750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4be39e1474e2a14580997d8f77e2f9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &828026758 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3588712428673232917, guid: 98e775879440306438b753ab10b06280,
+    type: 3}
+  m_PrefabInstance: {fileID: 828026749}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 828026750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a0446c7460cfee4283212474ef1dd51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &830365002
 GameObject:
   m_ObjectHideFlags: 0
@@ -5922,7 +5943,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh59756
+  m_Name: pb_Mesh52016
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -6558,8 +6579,8 @@ RectTransform:
   - {fileID: 434005197}
   - {fileID: 1246387552}
   - {fileID: 2077833826}
-  m_Father: {fileID: 593597583}
-  m_RootOrder: 2
+  m_Father: {fileID: 1952960120}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -7019,7 +7040,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh59810
+  m_Name: pb_Mesh52122
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -9023,7 +9044,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh59378
+  m_Name: pb_Mesh51416
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -9468,8 +9489,8 @@ RectTransform:
   - {fileID: 117537914}
   - {fileID: 1813885175}
   - {fileID: 1563701787}
-  m_Father: {fileID: 593597583}
-  m_RootOrder: 0
+  m_Father: {fileID: 1952960120}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -12713,7 +12734,7 @@ PrefabInstance:
         type: 3}
       propertyPath: playerToRevive
       value: 
-      objectReference: {fileID: 1576531276}
+      objectReference: {fileID: 828026757}
     - target: {fileID: 3943866738829450448, guid: 628d0091d3d17094b8b3d3d49934ccb1,
         type: 3}
       propertyPath: reviveProgressBar
@@ -12723,7 +12744,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1593901746}
+      objectReference: {fileID: 1568380798}
     - target: {fileID: 4908302290509216699, guid: 628d0091d3d17094b8b3d3d49934ccb1,
         type: 3}
       propertyPath: revivePoint
@@ -12774,6 +12795,30 @@ AudioSource:
     type: 3}
   m_PrefabInstance: {fileID: 1568380788}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1568380796 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4908302290509216699, guid: 628d0091d3d17094b8b3d3d49934ccb1,
+    type: 3}
+  m_PrefabInstance: {fileID: 1568380788}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1568380789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4be39e1474e2a14580997d8f77e2f9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1568380798 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 259900771597291677, guid: 628d0091d3d17094b8b3d3d49934ccb1,
+    type: 3}
+  m_PrefabInstance: {fileID: 1568380788}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1568380789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a0446c7460cfee4283212474ef1dd51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1576531268
 GameObject:
   m_ObjectHideFlags: 0
@@ -15601,6 +15646,9 @@ RectTransform:
   - {fileID: 1666298637}
   - {fileID: 1243084711}
   - {fileID: 550589002}
+  - {fileID: 1296473505}
+  - {fileID: 2131559674}
+  - {fileID: 937463717}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -16203,7 +16251,7 @@ PrefabInstance:
     - target: {fileID: 1066284429748362000, guid: 6357222ef9f72a54383fcf8e567f8564,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.82
+      value: -16.83
       objectReference: {fileID: 0}
     - target: {fileID: 1066284429748362001, guid: 6357222ef9f72a54383fcf8e567f8564,
         type: 3}
@@ -17025,8 +17073,8 @@ RectTransform:
   - {fileID: 1052927867}
   - {fileID: 164987836}
   - {fileID: 1404576643}
-  m_Father: {fileID: 593597583}
-  m_RootOrder: 1
+  m_Father: {fileID: 1952960120}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -17175,7 +17223,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh60074
+  m_Name: pb_Mesh52478
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -17346,6 +17394,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1066284429748362000, guid: 6357222ef9f72a54383fcf8e567f8564,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 24.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 1066284429748362000, guid: 6357222ef9f72a54383fcf8e567f8564,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 29.12
+      objectReference: {fileID: 0}
     - target: {fileID: 1066284429748362012, guid: 6357222ef9f72a54383fcf8e567f8564,
         type: 3}
       propertyPath: play

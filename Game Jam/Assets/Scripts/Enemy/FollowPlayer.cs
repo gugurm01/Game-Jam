@@ -7,14 +7,13 @@ public class FollowPlayer : MonoBehaviour
 {
     NavMeshAgent agent;
     [SerializeField] Transform costasDoPlayer;
-    MeshRenderer meshRenderer;
+    public GameObject meshRenderer;
 
     [SerializeField] GameObject play;
 
     private void Start()
     {
         agent = GetComponent<NavMeshAgent>();
-        meshRenderer = GetComponent<MeshRenderer>();
     }
 
     private void Update()
@@ -33,8 +32,8 @@ public class FollowPlayer : MonoBehaviour
 
     IEnumerator Aparecer()
     {
-        meshRenderer.enabled = true;
+        meshRenderer.SetActive(true);
         yield return new WaitForSeconds(1);
-        meshRenderer.enabled = false;
+        meshRenderer.SetActive(false);
     }
 }
