@@ -11,6 +11,7 @@ public class DamageInLantern : MonoBehaviour
     private bool isTakingDamage = false;
 
     private EnemyHealth health;
+    Robot robo;
 
     [SerializeField] MeshRenderer meshRenderer;
 
@@ -57,6 +58,7 @@ public class DamageInLantern : MonoBehaviour
         if (!isTakingDamage)
         {
             isTakingDamage = true;
+
             StartCoroutine(DamageCoroutine());
         }
     }
