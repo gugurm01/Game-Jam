@@ -66,6 +66,8 @@ MonoBehaviour:
   health: 2
   maxHealth: 100
   father: {fileID: 1066284430788054397}
+  source: {fileID: 0}
+  clip: {fileID: 8300000, guid: 755b0eb9db9ab844b8cab2acf6b5b0d3, type: 3}
 --- !u!114 &1066284429748362001
 MonoBehaviour:
   m_ObjectHideFlags: 0

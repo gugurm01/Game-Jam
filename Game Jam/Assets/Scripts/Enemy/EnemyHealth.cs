@@ -12,6 +12,9 @@ public class EnemyHealth : MonoBehaviour
 
     [SerializeField] GameObject father;
 
+    [SerializeField] AudioSource source;
+    [SerializeField] AudioClip clip;
+
     private void Awake()
     {
         Instance = this;
@@ -28,6 +31,7 @@ public class EnemyHealth : MonoBehaviour
         Robot.Instance.TakeDamage(dano);
         if(health <= 0)
         {
+            source.PlayOneShot(clip);
             Die();
         }
     }
