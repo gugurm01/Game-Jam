@@ -13,12 +13,12 @@ public class DamageInLantern : MonoBehaviour
     private EnemyHealth health;
     Robot robo;
 
-    [SerializeField] MeshRenderer meshRenderer;
+    [SerializeField] GameObject meshRenderer;
 
     void Start()
     {
         health = GetComponent<EnemyHealth>();
-        meshRenderer.enabled = false;
+        meshRenderer.SetActive(false);
 
         if (health == null)
         {
@@ -39,7 +39,7 @@ public class DamageInLantern : MonoBehaviour
         if (other.CompareTag("Lanterna"))
         {
             isInsideTrigger = true;
-            meshRenderer.enabled = true;
+            meshRenderer.SetActive(true);
         }
     }
 
@@ -49,7 +49,7 @@ public class DamageInLantern : MonoBehaviour
         {
             isInsideTrigger = false;
             StopTakingDamage();
-            meshRenderer.enabled = false;
+            meshRenderer.SetActive(false);
         }
     }
 
