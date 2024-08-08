@@ -7,7 +7,7 @@ public class Transicao : MonoBehaviour
 {
     private void Start()
     {
-        Cursor.lockState = CursorLockMode.Locked;
+        
     }
 
     public string nomeDaProximaCena; // Nome da cena que você deseja carregar
