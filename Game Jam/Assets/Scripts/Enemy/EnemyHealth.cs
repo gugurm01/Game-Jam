@@ -12,8 +12,6 @@ public class EnemyHealth : MonoBehaviour
 
     [SerializeField] GameObject father;
 
-    [SerializeField] TextMeshProUGUI healthText;
-
     private void Awake()
     {
         Instance = this;

@@ -7,29 +7,30 @@ public class Robot : MonoBehaviour
 {
     public static Robot Instance;
 
-    public Image healthBar;
+    public Slider healthSlider;
     public float healthBarAmount = 100f;
 
-    [SerializeField] int vidas;
+    [SerializeField] public int vidas, maxHealth;
 
     private void Awake()
     {
         Instance = this;
     }
 
-    private void Update()
+    private void Start()
     {
-        print(vidas);
+        vidas = maxHealth;
+        healthSlider.maxValue = maxHealth;
+        healthSlider.value = vidas;
     }
 
     public void TakeDamage(int dano)
     {
         vidas -= dano;
-        healthBarAmount -= dano;
-        healthBar.fillAmount = healthBarAmount / 100f;
+        healthSlider.value = vidas;
         if (vidas <= 0)
         {
-            GameManager.Instance.Win();
+            Debug.Log("Ganhou");
         }
     }
 }

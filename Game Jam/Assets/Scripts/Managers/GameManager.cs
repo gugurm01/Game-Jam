@@ -24,7 +24,7 @@ public class GameManager : MonoBehaviour
             GameOver();
         }
 
-        if(enemies.Length <= 0)
+        if(Robot.Instance.vidas <= 0)
         {
             Win();
         }
