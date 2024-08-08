@@ -2077,10 +2077,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a0446c7460cfee4283212474ef1dd51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
-  inputNameHorizontal: Horizontal 1
-  inputNameVertical: Vertical 1
-  color: {r: 0, g: 0, b: 0, a: 0}
+  speed: 5
+  inputNameHorizontal: Horizontal 2
+  inputNameVertical: Vertical 2
+  color: {r: 0.20369065, g: 1, b: 0, a: 0}
 --- !u!54 &259900771597291678
 Rigidbody:
   m_ObjectHideFlags: 0

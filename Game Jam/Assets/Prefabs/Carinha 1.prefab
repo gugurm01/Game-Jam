@@ -2284,8 +2284,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  inputNameHorizontal: Horizontal 2
-  inputNameVertical: Vertical 2
+  inputNameHorizontal: Horizontal 1
+  inputNameVertical: Vertical 1
   color: {r: 0.022718906, g: 0, b: 1, a: 0}
 --- !u!114 &1847687258135265801
 MonoBehaviour:
