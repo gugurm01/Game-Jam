@@ -8617,6 +8617,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Carinha 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3334196815085183180, guid: 628d0091d3d17094b8b3d3d49934ccb1,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 7214386091591990410, guid: 628d0091d3d17094b8b3d3d49934ccb1,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 7897595583456863418, guid: 628d0091d3d17094b8b3d3d49934ccb1,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 628d0091d3d17094b8b3d3d49934ccb1, type: 3}
 --- !u!1 &2087594499
@@ -9920,6 +9935,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5244571081176093023}
   - component: {fileID: 5244571081176093024}
+  - component: {fileID: 5244571081176093025}
   m_Layer: 0
   m_Name: RobozaoVitoria
   m_TagString: Untagged
@@ -9971,7 +9987,7 @@ Animator:
   m_GameObject: {fileID: 4864913648578579429}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 7e4b0fd436d828c48b598f074a29d3fe, type: 2}
+  m_Controller: {fileID: 9100000, guid: d38b5a03901b5c04697ba9a1cc0349c7, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -9981,6 +9997,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!65 &5244571081176093025
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4864913648578579429}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.14941287, y: 0.17446397, z: 0.09876367}
+  m_Center: {x: 0.0058824695, y: 0.0877745, z: -0.01911663}
 --- !u!4 &5249927387811645222
 Transform:
   m_ObjectHideFlags: 0
@@ -10822,6 +10851,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3366350918481514434, guid: 98e775879440306438b753ab10b06280,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
     - target: {fileID: 3588712428673232925, guid: 98e775879440306438b753ab10b06280,
         type: 3}
       propertyPath: m_RootOrder
@@ -10876,6 +10910,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8197995442816711288, guid: 98e775879440306438b753ab10b06280,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 8583546262603649704, guid: 98e775879440306438b753ab10b06280,
         type: 3}
