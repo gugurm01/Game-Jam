@@ -8,6 +8,7 @@ public class Pausa : MonoBehaviour
     [SerializeField] private GameObject menuPausa;
     [SerializeField] private GameObject menuControles;
     [SerializeField] private GameObject menuAudio;
+    [SerializeField] private GameObject menuTuto;
 
     void Update()
     {
@@ -53,5 +54,11 @@ public class Pausa : MonoBehaviour
     public void SairJogo()
     {
         Application.Quit();
+    }
+
+    public void SairTuto()
+    {
+        Time.timeScale = 1;
+        menuTuto.SetActive(false);
     }
 }
