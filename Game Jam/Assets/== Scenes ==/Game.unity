@@ -10307,6 +10307,38 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1335014310}
   m_CullTransparentMesh: 1
+--- !u!1 &1335255746 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1066284429748362004, guid: 6357222ef9f72a54383fcf8e567f8564,
+    type: 3}
+  m_PrefabInstance: {fileID: 1066284430534220756}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1335255754
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1335255746}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 5f24c830b82b1694090e3b7ab7685022, type: 3}
+  m_Controller: {fileID: 9100000, guid: 92f0e7550bdff4646ac43dfbe9731c01, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: "\nBinding warning: Some generic clip(s) animate transforms that
+    are already bound by a Humanoid avatar. These transforms can only be changed
+    by Humanoid clips.\n\tTransform 'Body_Chest'\n\tTransform 'Foot_R_Heel'\n\tTransform
+    'Foot_R_Root'\n\tTransform 'Body_Neck'\n\tTransform 'Head_Root'\n\tTransform
+    'Foot_L_Heel'\n\tTransform 'Body_Root'\n\tTransform 'Hand_L_Root'\n\tTransform
+    'Hand_R_Root'\n\tTransform 'Foot_L_Loot'\n\tand more ...\n\tFrom animation clip
+    'WalkRobo'"
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &1342178693
 GameObject:
   m_ObjectHideFlags: 0

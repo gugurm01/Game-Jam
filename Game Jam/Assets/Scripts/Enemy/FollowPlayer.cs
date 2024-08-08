@@ -8,18 +8,24 @@ public class FollowPlayer : MonoBehaviour
     NavMeshAgent agent;
     [SerializeField] Transform costasDoPlayer;
     public GameObject meshRenderer;
-    Animator animator;
     [SerializeField] GameObject play;
+
+    public void Awake()
+    {
+        Animator animator = GetComponent<Animator>();
+    }
 
     private void Start()
     {
-        animator = GetComponent<Animator>();
+       
         agent = GetComponent<NavMeshAgent>();
     }
 
     private void Update()
     {
         agent.SetDestination(costasDoPlayer.position);
+        float speed = agent.velocity.magnitude;
+      
 
     }
 
