@@ -5,27 +5,29 @@ using TMPro;
 
 public class EnemyHealth : MonoBehaviour
 {
+    public static EnemyHealth Instance;
+
     [SerializeField] int health;
-    [SerializeField] int maxHealth;
+    public int maxHealth;
 
     [SerializeField] GameObject father;
 
     [SerializeField] TextMeshProUGUI healthText;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
 
     private void Start()
     {
         health = maxHealth;
     }
 
-    private void Update()
-    {
-        healthText.text = health.ToString("Vida do Inimigo: 0");
-    }
-
     public void TakeDamage(int dano)
     {
         health -= dano;
-
+        Robot.Instance.TakeDamage(dano);
         if(health <= 0)
         {
             Die();
