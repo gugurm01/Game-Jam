@@ -1038,6 +1038,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: '         Robodano2'
       objectReference: {fileID: 0}
+    - target: {fileID: 6927897666049544023, guid: d61dcba9b2a582140b3622d63d540f6d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d61dcba9b2a582140b3622d63d540f6d, type: 3}
 --- !u!1001 &8587868521631560040
